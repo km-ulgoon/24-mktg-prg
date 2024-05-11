@@ -1,8 +1,67 @@
 body {
   background-color: #004290;
 }
+
 /* 글꼴설정 */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Black Han Sans", san-serif;
 }
 
+p {
+  font-family: "Sunflower", sans-serif;
+}
+
+.p-thin {
+  font-weight: 300;
+}
+
+.p-normal {
+  /* font-weight: 500; */
+  font-weight: normal;
+}
+
+.p-bold {
+  /*font-weight: 700;*/
+  font-weight: bold;
+}
+
+.p-larger {
+  /*
+  font-size: 30px;
+  */
+  font-size: 2.5rem;
+}
+
+.p-smaller {
+  /*
+  font-size: 8px;
+  */
+  font-size: 0.8em;
+}
+
+.p-linebr {
+  line-break: strict;
+  word-break: break-all;
+}
+
+.p-align {
+  text-align: justify;
+}
+
+.p-justify {
+  text-align: justify;
+}
+
+#article2 > h1 {
+  letter-spacing: -0.03rem;
+  word-spacing: 0.3rem;
+}
+
+.long-text {
+  line-height: 1.8rem;
+}

@@ -1,147 +1,202 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css,js files -->
-    <link href="style.css" rel="stylesheet" type="text/css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css,js files -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      background-color: #904200;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: #009042;">
+  <header>
+    <div id="main-logo">
+      <h1>
+        <img src="cat.jpg" width="128" />
+      </h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="html_practice.html">Shop</a></li>
+        <li><a href="bestpractice.html">Blog</a></li>
+        <li><a href="https://www.google.com/" target="_blank">My page</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main style="width:640px; margin: 0 auto;">
+    <section>
+      <h2>Headline</h2>
+      <article id="article1">
+        <h1>국민대학교 교정에서 푸른 벚꽃 발견되어 충격</h1>
+        <p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+          ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+        </p>
+        <p> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
+        <p> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
+      </article>
+      <article id="article2">
+        <h1>국민대학교 교정에서 푸른 벚꽃 발견되어 충격</h1>
+        <p class="p-thin p-larger"> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
+        <p class="p-normal p-align"> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
+        <p class="p-bold p-smaller"> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
+        <p class="p-linebr p-justify long-text">국무회의는 대통령·국무총리와 15인 이상 30인 이하의 국무위원으로 구성한다. 대법원장과 대법관이 아닌 법관은 대법관회의의 동의를 얻어 대법원장이 임-명한다. 여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다. 국가안전보장회의는 대통령이 주재한다. 훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다. 국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다. 모든 국민은 보건에 관하여 국가의 보호를 받는다. 신체장애자 및 질병·노령 기타의 사유로 생활능력이 없는 국민은 법률이 정하는 바에 의하여 국가의 보호를 받는다.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>많이 물어본 질문</h2>
+      <details>
+        <summary>건조기를 사용해도 괜찮나요?</summary>
+        <p>해당 의류는 고온의 조건에서 변형이 일어날 수 있습니다.</p>
+      </details>
+      <details open>
+        <summary>섬유유연제를 사용해도 괜찮나요?</summary>
+        <p>사용할 수 있는 섬유유연제는 다음과 같습니다.</p>
+        <p>두번째 문단은 p 태그를 한번 더 쓰시면 됩니다.</p>
+        <ul>
+          <li>다 울었니</li>
+          <li>샤프라따뚜이</li>
+          <li>피존투</li>
+        </ul>
+      </details>
+    </section>
+
+    <section>
+      <h3>표 연습</h3>
+      <!--연도별 상품데이터 -->
+      <!-- 컬럼제목을 표현하기 위한 thead -->
+      <table>
+        <thead>
+          <tr>
+            <th>상품명</th>
+            <th>2020</th>
+            <th>2021</th>
+            <th>2022</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>자동차</td>
+            <td>100</td>
+            <td>120</td>
+            <td>130</td>
+          </tr>
+          <tr>
+            <td>모니터</td>
+            <td>742</td>
+            <td rowspan="2">1082</td>
+            <td>769</td>
+          </tr>
+          <tr>
+            <td>에어컨</td>
+            <td>300</td>
+            <td>752</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">합계</td>
+            <td>4000</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <!-- form interaction -->
+    <section>
+      <form action="/signup" method="POST">
+        <p>Username</p>
+        <input list="names" name="username" type="text" maxlength="10" size="10">
+        <datalist id="names">
+          <option value="JohnDoe"></option>
+          <option value="JaneDoe"></option>
+          <option value="SeokdoMah"></option>
+        </datalist>
+
+        <label for="u-email">Email</label>
+        <input id="u-email" name="email" type="email">
+        <label for="u-pw">Password</label>
+        <input id="u-pw" name="password" type="password">
+        <label for="u-birth">Birthday</label>
+        <input id="u-birth" name="birthday" type="date">
+        <input type="submit">
+        <button type="reset">초기화</button>
+      </form>
+    </section>
+
     <style>
-      body {
-        background-color: #904200;
+      .div-square {
+        width: 100px;
+        height: 100px;
+      }
+      .sq-pd {
+        /* padding: 10px; */
+        /* padding: 10px 20px; */
+        /* padding: 10px 20px 30px; */
+        padding: 10px 20px 30px 40px;
+        padding-top: 30px;
+      }
+      .sq-mg {
+        margin: 30px 20px;
+      }
+      .div-center {
+        margin: 0px auto;
+        width: 25%;
       }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-  </head>
-  <body style="background-color: #009042;">
-    <header>
-      <div id="main-logo">
-        <h1>
-          <img src="cat.jpg" width="128"/>
-        </h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="html_practice.html">Shop</a></li>
-          <li><a href="bestpractice.html">Blog</a></li>
-          <li><a href="https://www.google.com/" target="_blank">My page</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2>Headline</h2>
-        <article id="article1">
-          <h1>국민대학교 교정에서 푸른 벚꽃 발견되어 충격</h1>
-          <p> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
-          <p> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
-          <p> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
-        </article>
-        <article id="article2">
-          <h1>국민대학교 교정에서 푸른 벚꽃 발견되어 충격</h1>
-          <p> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
-          <p> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
-          <p> 2024년 4월 국민대학교 경영관 앞에 푸른 벚꽃 나무가 발견되어 사람들의 이목을 집중시키고 있다.</p>
-        </article>
-      </section>
-      
-      <section>
-        <h2>많이 물어본 질문</h2>
-        <details>
-          <summary>건조기를 사용해도 괜찮나요?</summary>
-          <p>해당 의류는 고온의 조건에서 변형이 일어날 수 있습니다.</p>
-        </details>
-        <details open>
-          <summary>섬유유연제를 사용해도 괜찮나요?</summary>
-          <p>사용할 수 있는 섬유유연제는 다음과 같습니다.</p>
-          <p>두번째 문단은 p 태그를 한번 더 쓰시면 됩니다.</p>
-          <ul>
-            <li>다 울었니</li>
-            <li>샤프라따뚜이</li>
-            <li>피존투</li>
-          </ul>
-        </details>
-      </section>
-      
-      <section>
-        <h3>표 연습</h3>
-        <!--연도별 상품데이터 -->
-        <!-- 컬럼제목을 표현하기 위한 thead -->
-        <table>
-          <thead>
-            <tr>
-              <th>상품명</th>
-              <th>2020</th>
-              <th>2021</th>
-              <th>2022</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>자동차</td>
-              <td>100</td>
-              <td>120</td>
-              <td>130</td>
-            </tr>
-            <tr>
-              <td>모니터</td>
-              <td>742</td>
-              <td rowspan="2">1082</td>
-              <td>769</td>
-            </tr>
-            <tr>
-              <td>에어컨</td>
-              <td>300</td>
-              <td>752</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="3">합계</td>
-              <td>4000</td>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
-      <!-- form interaction -->
-      <section>
-        <form action="/signup" method="POST">
-          <p>Username</p>
-          <input list="names" name="username" type="text" maxlength="10" size="10">
-          <datalist id="names">
-            <option value="JohnDoe"></option>
-            <option value="JaneDoe"></option>
-            <option value="SeokdoMah"></option>
-          </datalist>
-          
-          <label for="u-email">Email</label>
-          <input id="u-email" name="email" type="email">
-          <label for="u-pw">Password</label>
-          <input id="u-pw" name="password" type="password">
-          <label for="u-birth">Birthday</label>
-          <input id="u-birth" name="birthday" type="date">
-          <input type="submit">
-          <button type="reset">초기화</button>
-        </form>
-      </section>
-    </main>
-    
-    <aside>
-      <h3>가장 많이 본 뉴스</h3>
-      <ul>
-        <!--id: 요소에 이름달기(unique) class: 스타일속성 활용을 위한 이름 -->
-        <li><a href="#article1">행운의 편지, 효과가...</a></li>
-        <li><a href="#article2">이번 여름 예상 최고기온이 헉!</a></li>
-        <li><a href="#">만우절 최고의 뉴스 - 만우절 폐지</a></li>
-      </ul>
-    </aside>
+    <section>
+      <div class="div-square" style="background-color: blue;">1</div>
+      <div class="div-square sq-pd" style="background-color: red;">2</div>
+      <div class="div-square sq-mg" style="background-color: gray;">3</div>
+      <div class="div-square div-center" style="background-color: lightgray;">4</div>
+    </section>
+    <style>
+      .flex-container {
+      display: flex;
+      width: 295px;
+      height: 120px;
+      /*
+      flex-direction: row;
+      flex-wrap: nowrap;
+      */
+      flex-flow: column nowrap;
+      }
+      .flex-box {width: 100px; height:100px; text-align:center;}
+      .bg-red {background-color: red;}
+      .bg-blue {background-color: blue;}
+      .bg-gray {background-color: gray;}
+    </style>
+    <section class="flex-container">
+      <article class="flex-box bg-red">1</article>
+      <article class="flex-box bg-blue">2</article>
+      <article class="flex-box bg-gray">3</article>
+    </section>
+  </main>
 
-    <footer>
-      <h3>This is footer.</h3>
-    </footer>
+  <aside>
+    <h3>가장 많이 본 뉴스</h3>
+    <ul>
+      <!--id: 요소에 이름달기(unique) class: 스타일속성 활용을 위한 이름 -->
+      <li><a href="#article1">행운의 편지, 효과가...</a></li>
+      <li><a href="#article2">이번 여름 예상 최고기온이 헉!</a></li>
+      <li><a href="#">만우절 최고의 뉴스 - 만우절 폐지</a></li>
+    </ul>
+  </aside>
 
-  </body>
+  <footer>
+    <h3>This is footer.</h3>
+  </footer>
+
+</body>
+
 </html>
